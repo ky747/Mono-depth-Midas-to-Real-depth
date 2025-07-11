@@ -57,9 +57,8 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 If you don't want using CUDA(enhance processing with GPU), changing `cuda` to `cpu`
 
 ## Example
-![dpt_levit_224](C:\Project\MiDas\MiDaS-master\MiDaS-master\Mono-depth-Midas-to-Real-depth\Midas v3.1 dpt_levit_224.png)
-![dpt_Swin2_L 384](C:\Project\MiDas\MiDaS-master\MiDaS-master\Mono-depth-Midas-to-Real-depth\Midas v3.1 Swin2-L 384.png)
-
+![dpt_levit_224](./Midas%20v3.1%20dpt_levit_224.png)
+![dpt_Swin2_L 384](./Midas%20v3.1%20Swin2-L%20384.png)
 
 So I made a progream realtime depth estimateing progream by object detected. 
 Not relying on the other sensor only camera. bottom right box on Yolo object detection screen, that contain real depth and compare other object’s depth everage with midas. 
