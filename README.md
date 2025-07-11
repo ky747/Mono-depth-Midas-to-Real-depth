@@ -80,10 +80,10 @@ Midas v3.1 dpt_swin2_large_384
 **We can find something intresting points.**
 **Top(levit_224) vs Bottom(Large 384)**
 1. Yello base box(bottom right on Yolo)
-- Between camera and standing lectur desk distance is similer.
+- Between camera and standing lectur desk real distance is similer.
 - But distingishing point is base box avarage of depth 
 - Base box is contained 15m real distance fixed. But Top and Buttom isn't correct about average of depth.
 - So a student behind lectur dex (he is wearing black shirt) considerable difference of depth between two picture.
-2. Midas model considerable diffenrce at detail. This envirment is laptop Galaxy Book Flex2 (i7-1165G7, MX450)
+2. Midas model considerable diffenrce at detail. This deveolp envirment is laptop Galaxy Book Flex2 (i7-1165G7, MX450)
 - dpt_levit_224 is low quility output but can realtime feedback. This situation laptop performance limited because of overheat, but condittion is more better average FPS is 17.
 - dpt_large_384 is high quality but taks many culcuation. So FPS is low
