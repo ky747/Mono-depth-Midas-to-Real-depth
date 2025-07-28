@@ -68,14 +68,21 @@ because of here
 ```py
 def create_side_by_side(image, depth, grayscale):
 ```
-![Gray](./gray.png)
-![RGB](./rgb.png)
-___
+<p align='center'>
+<img src='.\img\gray.png' align='center'>
+<img src='.\img\rgb.png' align='center'>
+</p>
+
+---
+
 ## Example
-![dpt_levit_224](./Midas%20v3.1%20dpt_levit_224.png)
+<p align='center'>
+<img src='img/Midas v3.1 dpt_levit_224.png'><br>
 Midas v3.1 dpt_levit_224 
-![dpt_Swin2_L 384](./Midas%20v3.1%20Swin2-L%20384.png)
+<img src='img/Midas v3.1 Swin2-L 384.png'><br>
 Midas v3.1 dpt_swin2_large_384
+</p>
+
 
 **We can find something intresting points.**
 **Top(levit_224) vs Bottom(Large 384)**
@@ -84,6 +91,19 @@ Midas v3.1 dpt_swin2_large_384
 - But distingishing point is base box avarage of depth 
 - Base box is contained 15m real distance fixed. But Top and Buttom isn't correct about average of depth.
 - So a student behind lectur dex (he is wearing black shirt) considerable difference of depth between two picture.
-2. Midas model considerable diffenrce at detail. This deveolp envirment is laptop Galaxy Book Flex2 (i7-1165G7, MX450)
+2. Midas model considerable diffenrce at detail. This deveolp envirment is Galaxy Book Flex2 (i7-1165G7, MX450)
 - dpt_levit_224 is low quility output but can realtime feedback. This situation laptop performance limited because of overheat, but condittion is more better average FPS is 17.
 - dpt_large_384 is high quality but taks many culcuation. So FPS is low
+
+---
+
+## Model confidence
+Real depth convert program depending on MiDaS's output. So MiDaS creadibility related to this program. I utilize pointcloud generate webprogram  to check MiDaS confidence.
+<p align='center'>
+<img src='img/1.jpg'><br>
+<img src='img/point2.jpg' align='center' width="49%">
+<img src='img/point3.jpg' align='center' width="50%">
+</p>
+
+**This output showing me caution point**
+Near the camera depth showing considerable expressiveness, but far from area can't express subtle depth. Forexample, between wall and brown wastebasket
